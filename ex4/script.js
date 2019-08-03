@@ -6,13 +6,13 @@ button.addEventListener('click', function(){
 
     let divs = document.querySelectorAll(".box")
 
-    for(let i = 0; i < divs.length; i++) {
-        divs[i].style.background = "blue";
-    }
+    // for(let i = 0; i < divs.length; i++) {
+    //     divs[i].style.background = "blue";
+    // }
 
-    // divs.forEach(function(box){
-    //     box.style.background = "blue"
-    // })
+    divs.forEach(function(box){
+        box.style.background = "blue"
+    })
 
     
 });
