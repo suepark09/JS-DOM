@@ -6,11 +6,26 @@
     SUPER BONUS) Make each task editable
 */
 
-let textInput = document.getElementById("description");
 let addButton = document.getElementById("add-button");
-let todoList = document.getElementById("todo-List");
+let todoList = document.getElementById("todo-list");
+let li = document.createElement("LI");
+
+
+
+
+
+
+
+// let todoItem = document.create
 
 addButton.addEventListener("click", function() {
-    textInput.
+    let todoText = document.getElementById("description").value
+    let textNode = document.createTextNode(todoText);
+    li.appendChild(textNode);
+    todoList.appendChild(li.appendChild(textNode));
+  
+    
+
+    console.log(todoList)
 })
 
