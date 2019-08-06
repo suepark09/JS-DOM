@@ -7,25 +7,28 @@
 */
 
 let addButton = document.getElementById("add-button");
-let todoList = document.getElementById("todo-list");
-let li = document.createElement("LI");
+let ul = document.querySelector("ul");
+let todoItem = document.querySelector("li");
 
+// strike through first item
+todoItem.addEventListener('click', function() {
+    todoItem.style.textDecoration = "line-through";
+})
 
-
-
-
-
-
-// let todoItem = document.create
 
 addButton.addEventListener("click", function() {
-    let todoText = document.getElementById("description").value
-    let textNode = document.createTextNode(todoText);
-    li.appendChild(textNode);
-    todoList.appendChild(li.appendChild(textNode));
-  
-    
+    let li = document.createElement("LI");
+    let todoInput = document.querySelector("#description")
+    li.appendChild(document.createTextNode(todoInput.value))
+    ul.append(li)
 
-    console.log(todoList)
+    // clears input field upon submitting
+    todoInput.value = ""; 
+
+    // strikes through rest of the tasks after the first one 
+    li.addEventListener('click', function() {
+        li.style.textDecoration = "line-through";
+    })
+    
 })
 
