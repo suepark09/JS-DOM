@@ -6,17 +6,17 @@ let header = document.getElementById("section-header");
 let section = document.getElementById("section");
 
 
-header.addEventListener("click", function() {
-    // console.log(header, 'bleheheheheheh');
+// header.addEventListener("click", function() {
+//     // console.log(header, 'bleheheheheheh');
 
-    // section.style.display = "none"
+//     // section.style.display = "none"
 
-    if(section.style.display === "none") {
-        section.style.display = "block"
-    } else {
-        section.style.display = "none"
-    }
+//     if(section.style.display === "none") {
+//         section.style.display = "block"
+//     } else {
+//         section.style.display = "none"
+//     }
 
-    // console.log('test')
-    // section.style.visability = 'hidden';
-})
+//     // console.log('test')
+//     // section.style.visability = 'hidden';
+// })
